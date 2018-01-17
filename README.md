@@ -16,7 +16,18 @@ Edições
 
 Descrição
 ------
-<!-- TODO -->
+Neste curso, aprenderemos como utilizar a tecnologia Ansible para automatizar tarefas. Veremos:
+
+- Por que e pra que usar Ansible?
+- A estrutura interna
+- Estrutura básica de um projeto com Ansible
+- Variáveis, templates e roles
+- Hierarquia do projeto (escopo de execução)
+- Playbooks, inventories
+- Ansible.cfg
+- E muito mais
+
+O curso será dividido em duas partes de muito código prático. Em cada parte de 1 hora, o instrutor explicará os conceitos e os alunos serão desafiados a colocar esse conhecimento em prática logo em seguida. Ao final, um projeto de aprovação - com prazo de 1 semana para entrega - será proposto para que os alunos possam ganhar o certificado.
 
 **Objetivo**
 Capacitar o aluno a utilizar a tecnologia Ansible.
@@ -34,13 +45,20 @@ Trabalha no desenvolvimento de software com Java e ecossistema JS. Tem grande ex
 
 Pré-requisitos
 ------
-<!-- TODO -->
+É muito importante que o aluno tenha instalado na máquina:
+
+- Python (a partir da versão 2.7)
+- Ansible (última versão - LTS)
+- Editor de texto (Visual Code Studio, Sublime, Atom, Brackets, etc)
+
+**ATENÇÃO**
+O Ansible depende da conexão SSH para o seu funcionamento, portanto é necessário ter um sistema Linux para poder participar. Para usuários Windows, recomendamos a utilização de uma máquina virtual (ou dual boot).
 
 **Configurações**
-<!-- TODO -->
+Não é necessária nenhuma configuração adicional.
 
 **Conhecimento**
-<!-- TODO -->
+Para melhor aproveitamento do curso, recomendamos que o aluno tenha noções básicas de infraestrutura.
 
 Caso você tenha algum problema ou dúvidas em relação aos pré-requisitos do curso, chegue **30 minutos** antes do início do curso para que possamos te auxiliar!
 
