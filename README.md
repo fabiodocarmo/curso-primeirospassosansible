@@ -4,7 +4,7 @@
 
 Curso presencial da Code Prestige - Primeiros passos com o Ansible
 ======================
-Repositório oficial do curso: Primeiros passos com o Ansible - TODO: inserir link aqui
+Repositório oficial do curso: Primeiros passos com o Ansible - https://codeprestige.github.io/curso-primeirospassosansible/
 
 <img src="thumbnail.jpg" alt="Capa da apresentação" title="Capa da apresentação" height="400px" />
 
@@ -12,7 +12,7 @@ Edições
 ------
 | Código        | Data          | Link  |
 | ------------- |:-------------:| -----:|
-| ANSIBLE01     | 23/01/2017    | [aqui](TODO: inserir link aqui) |
+| ANSIBLE01     | 23/01/2017    | [aqui](https://www.eventbrite.com.br/e/curso-primeiros-passos-com-o-ansible-tickets-42200130727#) |
 
 Descrição
 ------
