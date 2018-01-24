@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Curso - Introdução ao React - Code Prestige</title>
+		<title>Curso - Primeiros passos com Ansible - Code Prestige</title>
 
-		<meta name="description" content="Curso de Introdução ao React da Code Prestige">
-		<meta name="author" content="Diego Martins de Pinho">
+		<meta name="description" content="Curso de Introdução ao Ansible da Code Prestige">
+		<meta name="author" content="Romulo Scampini">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -43,353 +43,371 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<h1>React para Iniciantes</h1>
-					<h4>Curso introdutório a biblioteca do Facebook</h3>
+				<section data-background="images/ansible-background-3.jpg">
+					<h1>Primeiros passos com ansible</h1>
+					<h4>Curso introdutório a ferramenta Ansible</h3>
 					<p>
 						<small>
-							Instrutor: <a href="http://www.diegopinho.com.br" target="_blank">Diego Martins de Pinho</a>
+							Instrutor: <a href="http://scampini.com.br"> Romulo Scampini</a>
 						</small>
 					</p>
 					<p>
 						<small>
-							Realização: <a href="http://www.codeprestige.com.br" target="_blank">Code Prestige</a>		
+							Realização: <a href="http://www.codeprestige.com.br" target="_blank" class="cp-link">Code Prestige</a>&nbsp;&nbsp;&nbsp;
+							Apoio: <a href="http://www.imasters.com.br" target="_blank" class="cp-link">iMasters</a>
 						</small>
 					</p>
 				</section>
 
-				<section>
-					<h2>Code Prestige</h2>
+				<section data-background="images/fundo-codeprestige.jpg" class="without-border">
+					<!-- <h2>Code Prestige</h2> -->
+					<img height="200" data-src="images/logo-branco.png">
 					<p>
 						A Code Prestige é uma escola especializada no ensino de programação. Desenvolvemos diariamente artigos, cursos, livros digitais, vídeos e outros conteúdos que já auxiliaram mais de 4000 pessoas de todo o Brasil a alcançarem seus objetivos profissionais.
 					</p>
-					<p><small>Visite o nosso site! <br/><a href="http://www.codeprestige.com.br/">Code Prestige</a></small></p>
+					<p><small>Visite o nosso site e nos siga nas redes sociais!</small></p>
 				</section>
 
 				<section>
-					<h2>Instrutor</h2>
-					<div id="left">
-						<img data-src="https://avatars2.githubusercontent.com/u/4473622" />
-					</div>
-					
-					<div id="right">
-						<ul>
-							<li><b>Nome:</b> Diego M. de Pinho</li>
-							<li><b>Idade:</b> 25 anos</li>
-							<li><b>Minibio:</b> Cofundador da CodePrestige, autor de livros pela Casa do Código, palestrante em eventos e eterno estudante.</li>
-						</ul>
-					</div>
-				</section>
+                    <h2>Instrutor</h2>
+                    <div id="left">
+                        <img data-src="https://avatars2.githubusercontent.com/u/4999289" />
+                    </div>
+                    <div id="right">
+                        <ul>
+                            <li><b>Nome:</b> Romulo Scampini</li>
+                            <li><b>Idade:</b> 27 anos</li>
+                            <li><b>Minibio:</b> Cofundador da CodePrestige, atua com Desenvolvimento/DevOps, palestrante em eventos e eterno estudante.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Requisitos</h2>
+                    <ul>
+                        <li><a href="https://www.python.org/downloads" target="_blank">Python (versão >= 2.7)</a></li>
+                        <li><a href="http://docs.ansible.com/ansible/latest/intro_installation.html#installing-the-control-machine" target="_blank">Ansible (última versão - LTS)</a></li>
+                        <li>Editor de texto</li>
+                    </ul>
+                    <p>Ou </p>
+                    <p><a href="https://1drv.ms/u/s!AsA38lgui-DqoIp-HN52aV8bkWfxwQ">* VM do Ubuntu já com Ansible, Python e Visual Studio Code instalados</a></p>
+                </section>
 
 				<section>
-					<h2>Requisitos</h2>
-					<ul>
-						<li><a href="https://nodejs.org/en/" target="_blank">Node (versão > 6 LTS)</a></li>
-						<li><a href="https://www.npmjs.com/" target="_blank">npm (versão > 3.x)</a></li>
-						<li><a href="https://github.com/facebookincubator/create-react-app" target="_blank">create-react-app</a></li>
-						<li>Editor de texto</li>
-					</ul>
-				</section>
-
-				<section>
-					<section>
-						<h2>O que é o React?</h2>
-						<p>
-							O React é uma <b>biblioteca</b> JavaScript para criação de <b>interfaces de usuário</b> em aplicações web, que foi idealizada pelo time de desenvolvimento do Facebook.
-						</p>
-					</section>
-
-					<section>
+                    <section>
+                        <h2>Antes de começar...</h2>
+                        <ul>
+                            <li>Problema</li>
+                            <li>Propostas de solução</li>
+                            <li>Estrutura do ansible</li>
+                            <li>Ansible</li>
+                        </ul>
+                    </section>
+                    <section>
+						<h2>Problema</h2>
 						<ul>
-							<li>Versão atual: 16.X</li>
-							<li>Criada por: Jordan Walke, engenheiro do Facebook</li>
-							<li>Primeiro release: Maio de 2013 na JSConf US</li>
-							<li>Utilizado por grandes empresas: Facebook, Instagram, Netflix, Sony etc...</li>
-						</ul>
-					</section>
-
-					<section>
-						<h1>Mas pra que serve?</h1>
-						<p><small>O React foi desenvolvido com a seguinte missão:</small></p>
-						<p>Como construir grandes aplicações com muitos dados que mudam frequentemente?</p>
-					</section>
-
-					<section>
-						<ul>
-							<li>Focar somente na View</li>
-							<li>Utilizar o Virtual DOM</li>
-							<li>Trabalhar com componentes</li>
+							<li>Tarefas e configurações de Infra (Ops) <span class="fragment highlight-blue">manuais</span></li>
+							<li>Automação existente era com <span class="fragment highlight-blue">shell script</span></li>
+							<li>Cenário antes das ferramentas de automação</li>
 						</ul>
 					</section>
-
-				</section>
-
-				<section>
 					<section>
-						<h1>Legal, mas... Como tudo isso funciona?</h1>
-					</section>
-
-					<section>
-						<h1>Como já dizia o Jack Estripador:</h1>
-						<p>“Vamos por Partes”</p>
+						<img data-src="images/pre-ansible.gif" />
 					</section>
 				</section>
 
 				<section>
 					<section>
-						<h1>Exercício 1</h1>
+						<h1>Qual a solução ?</h1>
+						<h2><span class="fragment highlight-blue"> Ansible</span></h2>
 					</section>
+
+					<section>
+						<h1>O que é?</h1>
+						<p>Uma ferramenta open-source para automatizar tarefas relacionadas à infraestrutura.</p>
+						<h3>Base:</h3>
+						<ul>
+							<li>Estrutura interna do Ansible</li>
+							<li>Estrutura básica de um do projeto</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Estrutura interna do Ansible</h2>
+					</section>
+					<section>
+						<h3>Estrutura interna do Ansible</h2>
+						<ul>
+							<li>Escrito em Python</li>
+							<li>Versão Atual - 2.4</li>
+                            <li>Módulos
+                                <ul>
+                                    <li>Python</li>
+                                </ul>
+                            </li>
+							<li>Templates
+								<ul>
+									<li>jinja2</li>
+								</ul>			
+							</li>
+							<li><a href="http://bit.ly/ansible-yaml" target="_blank">YAML</a></li>
+							<li>Conexão via ssh (*ou local)</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Estrutura básica de um do projeto</h2>
+					</section>	
+					<section>
+						<img data-src="images/ansible-estrutua-basica.png" />
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Ansible &#10084; YAML</h1>
+					</section>
+					<section>
+						<h2>Variáveis</h2>
+						<ul>
+							<li>Não é necessário especificar o tipo</li>
+							<pre><code class="hljson">nome_var: valor</code></pre>
+							<li>Tipos: String, Int, Boolean, etc</li>
+							<li>YAML também suporta dicionário (Mapa)</li>
+							<pre><code class="hljson">
+informacoes_db:
+	host: 172.17.0.1
+	port: 5432
+	db: nome_db
+	username: usuario_db
+	password: 123456
+</code></pre>
+							<li>Como utilizar a variável ?</li>
+							<li>Próximo slide, hehe.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Utilização das variáveis</h2>
+                        <ul>
+                            <li>Variável simples:</li>
+<pre><code class="hljson">usuario: codeprestige
+grupo: "{{ usuario }}"
+</code></pre>
+                            <li>Um mapa:</li>
+                            <pre><code class="hljson">informacoes_db:
+  host: 172.17.0.1
+  port: 5432
+  db: nome_db
+  username: usuario_db
+  password: 123456
+                                    </code></pre>
+<pre><code>db_port: "{{ informacoes_db.port }}"       OU
+db_port: "{{ informacoes_db['port'] }}"</code></pre>
+                        </ul>
+                    </section>
+                    <section>
+                        <ul>
+                            <li>Array:</li>
+                            <pre><code class="hljson">usuarios: [ ]</code></pre>
+                            <pre><code class="hljson">grupo:
+  - codeprestige
+  - imasters</code></pre>
+                            <li>Variável com valor default:</li>
+                            <pre><code class="hljson">usuarios: "{{ user_cp|default('root') }}"</code></pre>
+                            <li>Variável boolean:</li>
+                            <pre><code class="hljson">usuario_sudo: True</code></pre>
+                            </ul>
+                    </section>
+				</section>
+
+                <section>
+                    <section>
+                        <h1>Módulo</h1>
+                    </section>
+                    <section>
+                        <h2>Módulo</h2>
+                        <ul>
+                            <li>É o que irá realizar a tarefa</li>
+                            <li>É o que permite e facilita a execução de tarefas</li>
+                            <li>Uma das maiores vantagens do ansible, e a quantidade de módulos já prontos</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h1>Playbook's</h1>
+                    </section>
+                    <section>
+                        <h2>Playbook's</h2>
+                        <ul>
+                            <li>Declaração de tarefas a serem executadas.</li>
+                            <li>É a "receita" do que fazer.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Playbook's</h2>
+                        <pre>
+                            <code class="hljson">---
+ - hosts: all
+   tasks:
+
+     - name: create folder
+       file:
+         path: /tmp/codeprestige-ansible
+         state: directory
+
+     - name: copy file
+       copy:
+         src: /etc/hosts
+         dest: /tmp/codeprestige-ansible/hosts</code></pre>
+                    </section>
+                </section>
+
+				<section>
+					<section><h1>Exercício 1</h1></section>
 					<section>
 						<h2>Objetivo</h2>
-						<p>Criar um aplicativo com o create-react-app</p>
+						<p>Criar um projeto ansible para criar uma pasta e copiar o arquivo /etc/hosts para a pasta criada</p>
 					</section>
 					<section>
 						<ol>
-							<li>Abrir o terminal</li>
-							<li>Escolher um diretório</li>
-							<li>Executar o comando <pre><code class="hlbash" data-trim contenteditable>create-react-app nome_do_projeto</code></pre>
-							<li>Fazer networking enquanto ele cria o seu projeto =)</li>
-							<li>Abrir o projeto no seu editor de texto</li>
-							<li>Voltar ao terminal e subir o projeto com o comando <pre><code class="hlbash" data-trim contenteditable>npm start</code></pre></li>
-							<li>Alterar a mensagem para “O curso de React é demais”</li>
+							<li>Criar os arquivos básicos para um projeto ansible
+                                <ul>
+                                    <li>ansible.cfg</li>
+                                    <li>inventory</li>
+                                    <li>run-ansible.sh</li>
+                                </ul>
+                            </li>
+							<li>Criar um playbook para executar as tarefas</li>
+							<li>Configurar as tarefas no playbook</li>
+							<li>Executar o playbook e conferir o resultado</li>
 						</ol>
 					</section>
-				</section>
+
+                    <section>
+                        <h2>Resumo</h2>
+                        <p>Estrutura de arquivos base:</p>
+                        <ul>
+                            <li>Ansible.cfg
+                                <ul>
+                                    <li>Arquivo com configurações do ansible</li>
+                                </ul>
+                            </li>
+                            <li>Inventory
+                                <ul>
+                                    <li>Determina em e quais máquinas serão instalados/configurados os itens do playbook.</li>
+                                </ul>
+                            </li>
+                            <li>run-ansible.sh</li>
+                        </ul>
+                    </section>
+
+                </section>
 
 				<section>
+                    <section>
+                        <h1>Templates</h1>
+                    </section>
+
 					<section>
-						<h2>create-react-app</h2>
-						<p>O <i>create-react-app</i> é um pacote que nos permite criar aplicações web utilizando o React <b>sem a necessidade fazer qualquer configuração</b>. Todas as ferramentas necessárias para desenvolvimento e deploy já estão embutidas.</p>
-					</section>
-					
-					<section>
-						<h2>Alguns dos plugins já configurados:</h2>
+						<h2>Templates</h2>
 						<ul>
-							<li>auto-prefixer</li>
-							<li>eslint</li>
-							<li>webpack</li>
-							<li>babel</li>
-							<li>jest</li>
-						</ul>
+                            <li>Permite a customização e criação de arquivos com conteúdo dinâmico.</li>
+                            <li>Por ex, um arquivo de configuração do postgres (pg_hba.conf), onde o IP liberado para acesso ao banco varia de acordo com o ambiente (Produção, Homolog, etc).</li>
+                        </ul>
 					</section>
 
-					<section>
-						<h2>Estrutura do Projeto</h2>
-						<table>
-							<thead>
-								<tr>
-									<th>Arquivo</th>
-									<th>Descrição</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td><small>README.md</small></td>
-									<td><small>Arquivo de orientações do create-react-app. Está em inglês.</small></td>
-								</tr>
-								<tr>
-									<td><small>node_modules/</small></td>
-									<td><small>Todas as dependências necessárias para o projeto.</small></td>
-								</tr>
-								<tr>
-									<td><small>package.json</small></td>
-									<td><small>Arquivo de descrição do projeto. Possui informações como o nome, autor, versão e as dependências.</small></td>
-								</tr>
-								<tr>
-									<td><small>public/</small></td>
-									<td><small>Diretório que possui os arquivos públicos do seu projeto. Contém o html inicial.</small></td>
-								</tr>
-								<tr>
-									<td><small>src/</small></td>
-									<td><small>Pasta onde está contido todos os recursos do projeto, arquivos de imagem, css, javascript e afins.</small></td>
-								</tr>
-							</tbody>
-						</table>
-					</section>
+                    <section>
+                        <p>Exemplo de arquivo template</p>
+                        <img data-src="images/ansible-template.png" />
+                    </section>
 
-					<section>
-						<h2>Componentes Padrões</h2>
-						<p><small>Para que o desenvolvedor não comece a desenvolver os componentes do zero, o projeto padrão já vem criado com alguns componentes para inspirar e servir como exemplo:</small></p>
-						<div id="left">
-							<ul>
-								<li>App.css</li>
-								<li>App.js</li>
-								<li>App.test.js</li>
-								<li>index.css</li>
-								<li>index.js</li>
-								<li>logo.svg</li>
-							</ul>
-						</div>
-						<div id="right">
-							<img width="550" data-src="https://cdn-images-1.medium.com/max/1600/1*S1tkR_QoaT8sqcIDsUnLjw.png">
-						</div>
-					</section>
-
-					<section>
-						<h2>Package.json</h2>
-						<p>O package.json é o arquivo que descreve a sua aplicação. Ele contém informações importantes, como o nome do projeto, autor, data, versão, e-mail e a declaração de suas dependências.</p>
-					</section>
-
-					<section>
-						<pre><code class="hljson" data-trim contenteditable>
-							{
-								"dependencies": {
-									"react": "^15.5.4",
-									"react-dom": "^15.5.4"
-								},
-								"scripts": {
-									"start": "react-scripts start",
-									"build": "react-scripts build",
-									"test": "react-scripts test --env=jsdom",
-									"eject": "react-scripts eject"
-								}
-							}
-						</code></pre>
-					</section>
-
-					<section>
-						<h2>Comandos npm</h2>
-						<table class="ctable">
-							<thead>
-								<tr>
-									<th>Comando</th>
-									<th>O que faz?</th>
-									<th>Resultado</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>start</td>
-									<td>Inicia o servidor de desenvolvimento</td>
-									<td>Na porta 3000 e abre o navegador automaticamente</td>
-								</tr>
-								<tr>
-									<td>test</td>
-									<td>Inicia a execução dos testes</td>
-									<td>Executa os testes utilizando o Jest e exibe os resultados no próprio console</td>
-								</tr>
-								<tr>
-									<td>run build</td>
-									<td>Reúne o aplicativo em arquivos estáticos para produção</td>
-									<td>Compila, traduz, minifica os recursos da aplicação e gera arquivos estáticos</td>
-								</tr>
-								<tr>
-									<td>run eject</td>
-									<td>Remove a dependência do “react-scripts” e copia explicitamente as ferramentas de build, configurações e scripts dentro do diretório da aplicação</td>
-									<td>Remove a dependência do “react-scripts” e deixa tudo manual para controle do desenvolvedor</td>
-								</tr>
-							</tbody>
-						</table>
-					</section>
-
-					<section>
-						<img data-src="https://i.imgur.com/NEY1F0F.png" />
-					</section>
-
+                    <section>
+                       <p>Utiliza outra task para copiar o template.</p>
+                        <img data-src="images/ansible-template-example.png" />
+                    </section>
 				</section>
 
-				<section>
-					<section><h1>Exercício 2</h1></section>
-					<section>
-						<h2>Objetivo</h2>
-						<p>Criar um novo componente na aplicação</p>
-					</section>
-					<section>
-						<ol>
-							<li>Criar um novo arquivo javascript</li>
-							<li>Usar a estrutura do App.js para montar um novo Componente</li>
-							<li>Inserir o novo componente dentro do App</li>
-							<li>Exibir com sucesso na tela o novo Componente</li>
-						</ol>
-					</section>
-				</section>
+                <section>
+                    <section>
+                        <h1>Roles</h1>
+                    </section>
 
-				<section>
-					<section>
-						<h2>Componentes React</h2>
-						<p>Todo componente precisa:</p>
-						<ul>
-							<li>importar o módulo React e o Component (classes)</li>
-							<li>estender o Component</li>
-							<li>ter o método render() que retorna o que deve ser renderizado</li>
-						</ul>
-					</section>
+                    <section>
+                        <h2>Roles</h2>
+                        <p>Conjunto de tarefas e/ou variáveis comuns</p>
+                    </section>
 
-					<section>
-						<h2>Só preciso disso?</h2>
-						<p>
-							Sim. Este é o mínimo necessário para se criar um Componente. Para componentes mais complexos, utilizamos Estados (States) e Propriedades (Props). Vamos usar os dois conceitos para alterar a cor de fundo da nossa página!
-						</p>
-					</section>
+                    <section>
+                        <h2>Estrutura de Role</h2>
+                        <img data-src="images/ansible-role-example.png" />
+                    </section>
+                </section>
 
-					<section>
-						<h1>DEMO</h1>
-					</section>
+                <section>
+                    <section>
+                        <h1>Hierarquia</h1>
+                    </section>
 
-				</section>
+                    <section>
+                        <h2>Hierarquia do projeto</h2>
+                        <ol>
+                            <li>roles</li>
+                            <li>group_vars</li>
+                            <li>host_vars</li>
+                            <li>playbook.yml</li>
+                            <li>tempo de execução</li>
+                        </ol>
+                    </section>
+                </section>
 
-				<section>
-					<h1>O que vimos?</h1>
-					<ul>
-						<li>Como criar um projeto do zero React do zero</li>
-						<li>Subir o projeto para desenvolvimento</li>
-						<li>Criar um novo Componente</li>
-						<li>Incluir um Componente dentro do outro</li>
-						<li>Mudar o estado de um Componente</li>
-						<li>Passar propriedades de um Componente para outro</li>
-					</ul>
-				</section>
-
-				<section>
-					<h1>Próximos Passos</h1>
-					<ul>
-						<li>Ciclo de vida</li>
-						<li>Melhorias do React 16</li>
-					</ul>
-				</section>
+                <section>
+                    <section>
+                        <h1>Exercício 2</h1>
+                    </section>
+                    <section>
+                        <h2>Objetivo</h2>
+                        <p>Criar um projeto ansible com role para instalar o VirtualBox e o Vagrant</p>
+                    </section>
+                    <section>
+                        <ul>
+                            <li>Criar um projeto com a estrutura básica</li>
+                            <li>Criar a role com a estrutura básica</li>
+                            <li>Definir as tarefas para cada tipo de S.O.</li>
+                            <li>Incluir condição para chamar as tasks referente ao S.O. correto</li>
+                            <li>Incluir no playbook a chamada da role</li>
+                        </ul>
+                    </section>
+                </section>
 
 				<section>
 					<section>
 						<h1>Projeto Final</h1>
 					</section>
-					<section>
-						<h2>Objetivo</h2>
-						<p>Criar uma página pessoal utilizando o create-react-app</p>
-					</section>
-					<section>
-						<h2>Prazo</h2>
-						<p>1 Semana</p>
-					</section>
-					<section>
-						<h2>Requisitos</h2>
-						<ul>
-							<li>A página deve conter pelo menos uma imagem</li>
-							<li>Deve conter pelo menos 3 componentes (além do App.js)</li>
-						</ul>
-					</section>
-					<section>
-						<h2>Desafio</h2>
-						<p>Criar a página de forma responsiva utilizando o <a href="https://react-bootstrap.github.io/" target="_blank">React Bootstrap</a></p>
-					</section>
+                    <section>
+                        <h3>Descrição na Issue do projeto</h3>
+                        <!--<p><a href="" target="_blank">Link</a></p>-->
+                    </section>
 					<section>
 						<h2>Entrega</h2>
-						<p>A entrega deve ser feita nesta <a href="https://github.com/codeprestige/curso-introducaoreact/issues/1" target="_blank">issue</a> do projeto no GitHub</p>
-					</section>
-				</section>
+						<!--<p>A entrega deve ser feita nesta <a href="" target="_blank">issue</a> do projeto no GitHub</p>-->
+                    </section>
+                </section>
 
-				<section style="text-align: left;">
-					<h1>Referências</h1>
-					<p>
-						- <a href="https://reactjs.org/" target="_blank">React: Página oficial</a> <br>
-						- <a href="https://github.com/facebookincubator/create-react-app">GitHub: Create-React-App</a> <br>
-						- <a href="https://codeprestige.com.br/ebooks/react/index.html" target="_blank">E-book: Começando com o React</a>
-					</p>
-				</section>
+                <section style="text-align: left;">
+                    <h1>Referências</h1>
+                    <p>
+                        - <a href="https://www.ansible.com/" target="_blank">Ansible: Página oficial</a> <br>
+                        - <a href="http://docs.ansible.com/ansible/latest/index.html" target="_blank">Ansible: Documentação Oficial</a> <br>
+                        - <a href="https://github.com/ansible/ansible">GitHub: Ansible</a> <br>
+                    </p>
+                </section>
 
-				<section>
-						<h1>Code Prestige</h1>
-						<h3>Ensino de programação</h3>
-					</section>
+                <section data-background="images/fundo-codeprestige.jpg" class="without-border">
+                    <a>
+                        <img height="200" data-src="images/logo-branco.png">
+                    </a>
+                </section>
 
 			</div>
 

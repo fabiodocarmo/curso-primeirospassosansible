@@ -52,7 +52,11 @@ Pré-requisitos
 - Editor de texto (Visual Code Studio, Sublime, Atom, Brackets, etc)
 
 **ATENÇÃO**
-O Ansible depende da conexão SSH para o seu funcionamento, portanto é necessário ter um sistema Linux para poder participar. Para usuários Windows, recomendamos a utilização de uma máquina virtual (ou dual boot).
+Para facilitar, deixamos uma [VM de Ubuntu](https://1drv.ms/u/s!AsA38lgui-DqoIp-HN52aV8bkWfxwQ) com os requisitos já instalados, já que o Ansible depende da conexão SSH para o seu funcionamento.
+
+Dados de acesso da VM:
+ - Usuário: romuloscampini
+ - Senha: 123456
 
 **Configurações**
 Não é necessária nenhuma configuração adicional.
